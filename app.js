@@ -4,7 +4,7 @@ const btn = document.getElementById('btn')
 const text = document.getElementById('text')
 
 document.addEventListener('DOMContentLoaded', function(){
-    const todo = JSON.parse(localStorage.getItem('todo'))
+    const todo = JSON.parse(localStorage.getItem('todo')) || []
     todo.forEach(addElement)
     updatecount()
 })
@@ -31,7 +31,7 @@ function addElement(tasks){
 }
 
 function savetodo(tasks){
-    const todo =  JSON.parse(localStorage.getItem('todo'))
+    const todo =  JSON.parse(localStorage.getItem('todo')) || []
     todo.push(tasks)
     localStorage.setItem('todo', JSON.stringify(todo))
 }
