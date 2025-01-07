@@ -105,3 +105,21 @@ button:hover{
     }
 }
 
+
+@media only screen and (max-width: 600px) {
+    .container{
+    max-width: 400px;
+    padding: 60px 22px;
+    }
+    h1{
+        text-align: center;
+        margin: 20px auto;
+    }
+    #text{
+        margin-right: -10px;
+        padding: 13px 15px;
+    }
+    .item{
+        width: 100%;
+    }
+}
